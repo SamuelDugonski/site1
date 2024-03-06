@@ -1,0 +1,167 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+header img {
+    margin-top: -30px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.local1, .local2, .local3, .local4{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+text-decoration: none;
+}
+
+
+footer {
+    background-color: #1e71eb;
+    padding: 10px;
+    color: white;
+    text-align: left; /* Alinhar todo o conteúdo à esquerda */
+    margin-top: 110px;
+    width: 100%;
+    font-size: 13px;
+    display: flex;
+   
+    justify-content: left; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+
+}
+footer h2 {
+    margin-left: 120px; /* Ou o valor desejado */
+    font-size: 23px;
+    font-weight: 600;
+}
+footer img {
+    margin-left: 110px; /* Ou o valor desejado */
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinhar os itens à esquerda */
+
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white;
+}
+.redes {
+    width: 45%; /* Largura da div de redes */
+    padding: 10px;
+    box-sizing: border-box; /* Para incluir padding na largura */
+}
+
+.redes h2 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.redes img {
+    margin-left: 110px; /* Ou o valor desejado */
+}
+
+.redes a {
+    text-decoration: none;
+    color: white;
+}
+
+.redes .instagram {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.redes .facebook {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.redes .whatsapp {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.feedback-form {
+    max-width: 600px; /* Aumentando a largura do formulário */
+    margin: 0 auto;
+    padding: 40px; /* Aumentando o padding do formulário */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px; /* Aumentando o padding dos campos de entrada */
+    margin-bottom: 20px; /* Aumentando a margem inferior dos campos de entrada */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px; /* Aumentando o tamanho da fonte */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rating {
+    margin-bottom: 20px;
+}
+
+.stars {
+    color: #ccc;
+    font-size: 32px; /* Aumentando o tamanho das estrelas */
+}
+
+.star {
+    cursor: pointer;
+}
+
+.star.active, .star:hover {
+    color: #1e71eb;
+}
+
+button {
+    padding: 12px 20px; /* Aumentando o padding do botão */
+    font-size: 16px; /* Aumentando o tamanho da fonte do botão */
+    border-radius: 5px;
+    background-color: #1e71eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.feed{
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+.txt{
+    font-family: 'Montserrat';
+    font-weight: 350;
+    font-size: 11px;
+    text-align: center;
+}

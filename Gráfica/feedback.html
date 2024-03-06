@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferencial Serviços</title>
+    <link rel="stylesheet" href="./styles/style5.css">
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="sobre.html" class="classe__sobre">SOBRE</a>
+                <a href="servicos.html" class="classe__servicos">SERVIÇOS</a>
+                <a href="index.html" class="classe__imagem">
+                    <img src="img/logotipo2.png" alt="Descrição da imagem">
+                </a>
+                <a href="feedback.html" class="classe__feedback">FEEDBACK</a>
+                <a href="links.html" class="classe__links">LINKS</a>
+            </nav>
+        </header>
+        <main>
+            <h1 class="feed">FEEDBACK
+            </h1>
+            <pre class="txt">Conte para nós sua expêriencia com a Diferencial.</pre>
+            <div class="feedback-form">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" name="nome" class="input-field">
+    
+                <label for="contato">Email/Telefone:</label>
+                <input type="text" id="contato" name="contato" class="input-field">
+    
+                <div class="rating">
+                    <label for="stars">Avaliação:</label>
+                    <div class="stars" id="stars">
+                        <span class="star" data-value="1" id="star1">&#9733;</span>
+                        <span class="star" data-value="2" id="star2">&#9733;</span>
+                        <span class="star" data-value="3" id="star3">&#9733;</span>
+                        <span class="star" data-value="4" id="star4">&#9733;</span>
+                        <span class="star" data-value="5" id="star5">&#9733;</span>
+                    </div>
+                </div>
+                
+                <script>
+                    const stars = document.querySelectorAll('.star');
+                    let estrelasSelecionadas = 0;
+                
+                    stars.forEach((star, index) => {
+                        star.addEventListener('click', () => {
+                            estrelasSelecionadas = index + 1;
+                            for (let i = 0; i <= index; i++) {
+                                stars[i].classList.add('active');
+                            }
+                            for (let i = index + 1; i < stars.length; i++) {
+                                stars[i].classList.remove('active');
+                            }
+                        });
+                    });
+                
+                    function sendFeedback() {
+                        const nome = document.getElementById('nome').value;
+                        const contato = document.getElementById('contato').value;
+                        const feedback = document.getElementById('feedback').value;
+                
+                        fetch('/send-feedback', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                nome: nome,
+                                contato: contato,
+                                estrelas: estrelasSelecionadas,
+                                feedback: feedback
+                            })
+                        })
+                        .then(response => response.text())
+                        .then(data => {
+                            alert(data);
+                        })
+                        .catch(error => {
+                            console.error('Erro:', error);
+                            alert('Erro ao enviar o feedback');
+                        });
+                    }
+                </script>
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" class="input-field"></textarea>
+    
+                <button onclick="sendFeedback()">Enviar</button>
+            </div>
+        </main>
+        <footer>
+            <div class="contato">
+                <h2>Contato</h2>
+                <img src="img/barra.png" alt="barra">
+                <pre>
+                <a class="local1" href="https://www.google.com/maps/place/Av.+Marqu%C3%AAs+de+S%C3%A3o+Vicente,+3001+-+%C3%81gua+Branca,+S%C3%A3o+Paulo+-+SP,+05036-040/@-23.5160279,-46.6899271,17z/data=!3m1!4b1!4m6!3m5!1s0x94cef86cb4cbe8a3:0x484c3b624a695fb5!8m2!3d-23.5160279!4d-46.6899271!16s%2Fg%2F11bw40jdgx?entry=ttu">Av. Marquês de São Vicente - 3001</a>
+                    
+                <a class="local2" href="https://www.google.com/maps/place/Av.+Marqu%C3%AAs+de+S%C3%A3o+Vicente,+3001+-+%C3%81gua+Branca,+S%C3%A3o+Paulo+-+SP,+05036-040/@-23.5160279,-46.6899271,17z/data=!3m1!4b1!4m6!3m5!1s0x94cef86cb4cbe8a3:0x484c3b624a695fb5!8m2!3d-23.5160279!4d-46.6899271!16s%2Fg%2F11bw40jdgx?entry=ttu">Água Branca - São Paulo</a>
+                    
+                <a class="local3" href="https://www.google.com/maps/place/Av.+Marqu%C3%AAs+de+S%C3%A3o+Vicente,+2200-2147483647+-+%C3%81gua+Branca,+S%C3%A3o+Paulo+-+SP,+05036-040/@-23.515448,-46.6883031,17z/data=!3m1!4b1!4m6!3m5!1s0x94cef8118a520c7d:0xae1e0567bd227c21!8m2!3d-23.5154552!4d-46.6882667!16s%2Fg%2F1tkb67fr?entry=ttu">CEP - 05036-040</a>
+                   
+                <a class="local4"href="impressao@graficadiferencial.com.br">impressao@graficadiferencial.com.br</a>
+                </pre>
+            </div>
+            <div class="redes">
+                <h2>Redes</h2>
+                <img src="img/barra.png" alt="barra">
+                <pre>
+                <a class="instagram" href="https://www.instagram.com">Instagram</a>
+
+                <a class="facebook" href="https://www.facebook.com">Facebook</a>
+
+                <a class="whatsapp" href="https://wa.me">WhatsApp</a>
+
+                </pre>
+            </div>
+        </footer>
+        </body>
+        </html>

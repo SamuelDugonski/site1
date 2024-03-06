@@ -1,0 +1,162 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+header img {
+    margin-top: -30px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 510;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 13px;
+    margin-bottom: 50px;
+}
+
+button, a {
+    text-decoration: none;
+}
+
+button {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 20px 250px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.botao1 {
+    background-color: #65ff7a;
+    border: none;
+    border-radius: 40px;
+}
+
+.botao2 {
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+
+.botao3 {
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+
+.botao4 {
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 20px 257px;
+}
+.local1, .local2, .local3, .local4{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+text-decoration: none;
+}
+
+
+footer {
+    background-color: #1e71eb;
+    padding: 10px;
+    color: white;
+    text-align: left; /* Alinhar todo o conteúdo à esquerda */
+    margin-top: 110px;
+    width: 100%;
+    font-size: 13px;
+    display: flex;
+   
+    justify-content: left; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+
+}
+footer h2 {
+    margin-left: 120px; /* Ou o valor desejado */
+    font-size: 23px;
+    font-weight: 600;
+}
+footer img {
+    margin-left: 110px; /* Ou o valor desejado */
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinhar os itens à esquerda */
+
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white;
+}
+.redes {
+    width: 45%; /* Largura da div de redes */
+    padding: 10px;
+    box-sizing: border-box; /* Para incluir padding na largura */
+}
+
+.redes h2 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.redes img {
+    margin-left: 110px; /* Ou o valor desejado */
+}
+
+.redes a {
+    text-decoration: none;
+    color: white;
+}
+
+.redes .instagram {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.redes .facebook {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.redes .whatsapp {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}

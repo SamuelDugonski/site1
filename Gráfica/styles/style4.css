@@ -1,0 +1,205 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    margin-top: 4.5%;
+}
+
+header img {
+    margin-top: -30px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Para que o main ocupe todo o espaço restante verticalmente */
+}
+
+.texto-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Define a altura do texto-wrapper como 100% da altura da tela */
+}
+
+.texto1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+main img {
+    max-width: 100vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo pre {
+    margin: 5px 0; /* Adiciona um espaço entre os textos */
+}
+
+.conteudo button {
+    margin-top: 20px; /* Adiciona espaço entre os textos e o botão */
+}
+.txt{
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+.txt2{
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+.txt3{
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+.txt4{
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: 500;
+}
+.txt5{
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+.txt6{
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: 500;
+}
+.txt7{
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+.txt8{
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: 500;
+}
+.txt9{
+    font-family: 'Montserrat';
+    font-weight: 350;
+}
+.botao{
+    font-family: 'montserrat';
+    padding: 11px 35px; /* Espaçamento interno do botão */
+    border-radius: 20px; /* Raio de curvatura das bordas */
+    background-color: #1e71eb; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    font-weight: 600;
+    font-size: 10px;
+
+}
+.botaodois:hover {
+    background-color: #ffffff; /* Cor de fundo ao passar o mouse sobre o botão */
+    color: black;
+    border: 1px solid black;
+}
+.local1, .local2, .local3, .local4{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+text-decoration: none;
+}
+
+
+footer {
+    background-color: #1e71eb;
+    padding: 10px;
+    color: white;
+    text-align: left; /* Alinhar todo o conteúdo à esquerda */
+    margin-top: 110px;
+    width: 100%;
+    font-size: 13px;
+    display: flex;
+   
+    justify-content: left; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+
+}
+footer h2 {
+    margin-left: 120px; /* Ou o valor desejado */
+    font-size: 23px;
+    font-weight: 600;
+}
+footer img {
+    margin-left: 110px; /* Ou o valor desejado */
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinhar os itens à esquerda */
+
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white;
+}
+.redes {
+    width: 45%; /* Largura da div de redes */
+    padding: 10px;
+    box-sizing: border-box; /* Para incluir padding na largura */
+}
+
+.redes h2 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.redes img {
+    margin-left: 110px; /* Ou o valor desejado */
+}
+
+.redes a {
+    text-decoration: none;
+    color: white;
+}
+
+.redes .instagram {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.redes .facebook {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.redes .whatsapp {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,160 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+header img {
+    margin-top: -30px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+/* Estilos das colunas */
+.coluna {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        margin-right: 5px; /* Adicione um espaçamento para a direita na coluna esquerda */
+        margin-left: 5px; /* Adicione um espaçamento para a esquerda na coluna direita */
+        
+}
+
+/* Estilos das imagens */
+.imagem-container {
+    position: relative;
+    margin-bottom: 20px;
+    width: 60%;
+}
+.imagem-container:last-child {
+    margin-right: 0;
+}
+
+.imagem-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos dos botões sobrepostos */
+.botao-sobreposto {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 140px;
+    background-color: #1e71eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    display: none;
+    font-weight: 500;
+}
+
+.imagem-container:hover .botao-sobreposto {
+    display: block;
+}
+.local1, .local2, .local3, .local4{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+text-decoration: none;
+}
+
+
+footer {
+    background-color: #1e71eb;
+    padding: 10px;
+    color: white;
+    text-align: left; /* Alinhar todo o conteúdo à esquerda */
+    margin-top: 110px;
+    width: 100%;
+    font-size: 13px;
+    display: flex;
+   
+    justify-content: left; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+
+}
+footer h2 {
+    margin-left: 120px; /* Ou o valor desejado */
+    font-size: 23px;
+    font-weight: 600;
+}
+footer img {
+    margin-left: 110px; /* Ou o valor desejado */
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinhar os itens à esquerda */
+
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white;
+}
+.redes {
+    width: 45%; /* Largura da div de redes */
+    padding: 10px;
+    box-sizing: border-box; /* Para incluir padding na largura */
+}
+
+.redes h2 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.redes img {
+    margin-left: 110px; /* Ou o valor desejado */
+}
+
+.redes a {
+    text-decoration: none;
+    color: white;
+}
+
+.redes .instagram {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.redes .facebook {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.redes .whatsapp {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
